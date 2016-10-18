@@ -88,7 +88,7 @@ int main(void)
     rdtsc0 = __rdtsc();
     printf("BLAKE2b rdtsc: %u\n", (uint)rdtsc0);
 
-    printf("inputheader: %ui\n", inputheader);
+    //printf("inputheader: %ui\n", inputheader);
 
     solution_count = SolverFunction(context, inputheader, validBlock, 0, cancelled, 0, 1, 200, 9);
     printf("Solutions Found: %i\n", solution_count);
